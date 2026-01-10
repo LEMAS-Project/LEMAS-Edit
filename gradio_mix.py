@@ -1212,7 +1212,7 @@ def get_app():
                     with gr.Row():
                         lemas_model_choice = gr.Radio(
                             label="Edit Models",
-                            choices=["autoregressive", "multilingual_grl", "multilingual_prosody"],
+                            choices=["autoregressive"], # , "multilingual_grl", "multilingual_prosody"
                             value="autoregressive",
                             interactive=True,
                             scale=4,
