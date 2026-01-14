@@ -4,7 +4,7 @@
 [![demo](https://img.shields.io/badge/GitHub-Demo%20page-orange.svg)](https://lemas-project.github.io/LEMAS-Project/)
 [![hfspace](https://img.shields.io/badge/🤗-Space%20Demo-yellow)](https://huggingface.co/spaces/LEMAS-Project/LEMAS-Edit)
 [![hfmodel](https://img.shields.io/badge/🤗-Models%20Download-yellow)](https://huggingface.co/LEMAS-Project/LEMAS-Edit)
-
+[![msmodel](https://img.shields.io/badge/MS-Models%20Download-purple)](https://www.modelscope.cn/models/LEMAS/LEMAS-Edit)
 LEMAS‑Edit is a multilingual version speech editing system, supporting 10 languages:
 - Chinese
 - English
