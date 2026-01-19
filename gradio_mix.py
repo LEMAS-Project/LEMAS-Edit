@@ -301,7 +301,7 @@ class TextNorm():
                 txts.append(text)
                 phonemes.append(text)
                 continue
-            text = NSWNormalizer(text.strip()).normalize()
+            text = NSWNormalizer().normalize(text.strip())
             
             text_list = list(jieba.cut(text))
             print("jieba cut: ", text, text_list)
