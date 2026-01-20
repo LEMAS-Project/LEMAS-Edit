@@ -106,7 +106,7 @@ You can customize host/port and sharing:
 python gradio_mix.py --host 0.0.0.0 --port 7861 --share
 ```
 
-### 4.2 CLI: Multilingual TTS and CFM Speech Editing
+### 3.2 CLI: Multilingual TTS and CFM Speech Editing
 
 The `lemas_tts.scripts` entrypoints are kept for convenience and behave as in
 the original LEMAS‑TTS repo:
@@ -122,7 +122,7 @@ the original LEMAS‑TTS repo:
 See those scripts for detailed CLI options (model choice, ckpt paths,
 speed / NFE / CFG / Sway, etc.).
 
-### 4.3 CLI: Autoregressive Codec Speech Editing (WIP)
+### 3.3 CLI: Autoregressive Codec Speech Editing (WIP)
 
 A direct CLI for the autoregressive codec backend is provided as a starting point:
 
@@ -133,7 +133,20 @@ This script is a port of the original `VoiceCraft/inference_lemas_editing.py`
 and is currently being adapted to the `lemas_edit` namespace. Its interface may
 change; please refer to the script source for up‑to‑date arguments and usage.
 
-## 5. Acknowledgements
+
+### 3.4 ABX Preference Test (Evaluation)
+
+We provide a simple ABX preference test setup under `./abx`.
+
+To start the ABX preference test, install the extra dependencies and launch the tools:
+
+```bash
+pip install audiotools joypy
+python abx.py      # launch Gradio ABX preference test UI
+python plot.py     # aggregate results and plot preference distributions
+```
+
+## 4. Acknowledgements
 
 This project builds on, and reuses code from, several open‑source projects:
 - [VoiceCraft](https://github.com/jasonppy/VoiceCraft) – Autoregressive
@@ -146,8 +159,7 @@ This project builds on, and reuses code from, several open‑source projects:
 
 If you use LEMAS‑Edit in your work, please also consider citing and acknowledging these upstream projects.
 
-## 6. License
+## 5. License
 
 This repository is released under the **CC‑BY‑NC‑4.0** license.  
 See https://creativecommons.org/licenses/by-nc/4.0/ for more details.
-
