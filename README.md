@@ -134,16 +134,29 @@ and is currently being adapted to the `lemas_edit` namespace. Its interface may
 change; please refer to the script source for up‑to‑date arguments and usage.
 
 
-### 3.4 ABX Preference Test (Evaluation)
+### 3.4 Subjective Evaluation
 
-We provide a simple ABX preference test setup under `./abx`.
+We provide simple subjective listening tests (MUSHRA and ABX preference test) setup under `./eval`.
+
+To install the extra dependencies for evaluation, run:
+
+```bash
+pip install git+https://github.com/descriptinc/audiotools
+pip install joypy pandas
+```
 
 To start the ABX preference test, install the extra dependencies and launch the tools:
 
 ```bash
-pip install audiotools joypy
+cd ./eval/abx
 python abx.py      # launch Gradio ABX preference test UI
 python plot.py     # aggregate results and plot preference distributions
+```
+To start the MUSHRA listening test, install the extra dependencies and launch the tools:
+
+```bash
+cd ./eval/mushra
+python mushra.py      # launch Gradio MUSHRA listening test UI
 ```
 
 ## 4. Acknowledgements
@@ -156,6 +169,7 @@ This project builds on, and reuses code from, several open‑source projects:
 - [Seamless-Expressive](https://huggingface.co/facebook/seamless-expressive) – Prosody encoder.
 - [UVR5](https://github.com/Anjok07/ultimatevocalremovergui) – Separate an audio file into various stems, using multiple models.
 - [DeepFilterNet](https://github.com/Rikorose/DeepFilterNet) – Noise supression using deep filtering.
+- [audiotools](https://github.com/descriptinc/audiotools) – Audio tools for subjective evaluation.
 
 If you use LEMAS‑Edit in your work, please also consider citing and acknowledging these upstream projects.
 
