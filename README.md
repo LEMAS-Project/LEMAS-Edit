@@ -90,7 +90,7 @@ will automatically find the checkpoints and vocabs.
 All commands below assume:
 
 ```bash
-cd ./LEMAS-Edit_hf
+cd ./LEMAS-Edit
 export PYTHONPATH="$PWD:${PYTHONPATH}"
 ```
 ### 3.1 Gradio Web UI (Integrated Editing Demo)
